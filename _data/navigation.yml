@@ -1,0 +1,11 @@
+# If you want to link only specific pages in your header, add the path to the
+# pages in order as they should show up.
+main:
+  - title: "Blog"
+    url: /archives/
+  - title: "Resume"
+    url: https://drive.google.com/open?id=0B5xh9L2fvTaxb1M5dGl6US1CeGM
+  - title: "Publications"
+    url: /publications/
+  - title: "GitHub"
+    url: https://github.com/brandonlmorris

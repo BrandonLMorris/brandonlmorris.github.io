@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>My publications</h1>
+
+  {{ content }}
+
+  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
+
+  <ul class="publications">
+    {% for pub in site.data.publications %}
+      {% capture post_lang %}{{ pub.lang | default: site_lang }}{% endcapture %}
+      {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
+
+      <li style="margin-bottom:7%">
+        <h2>
+          <a class="post-link" {% if pub.url != empty %}href="{{ pub.url  }}"{% endif %}{% if lang != empty %} lang="{{ lang }}"{% endif %}>{{ pub.title | escape }}{% if post.external-url %} &rarr;{% endif %}</a>
+        </h2>
+        <span class="post-meta">{{ pub.authors }}</span>
+        <span class="post-meta">{{ pub.year }}, {{ pub.venue }}</span>
+        <br>
+        {{ pub.description }}
+
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
