@@ -31,7 +31,7 @@ gems:
 exclude:
   - Gemfile
 
-theme: jekyll-whiteglass
+# theme: jekyll-whiteglass
 gems:
   - jekyll-archives
   - jekyll-paginate
