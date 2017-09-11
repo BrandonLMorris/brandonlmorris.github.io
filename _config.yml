@@ -48,3 +48,5 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
 
+comments: false
+
