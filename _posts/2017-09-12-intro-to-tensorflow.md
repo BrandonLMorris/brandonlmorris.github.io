@@ -120,7 +120,7 @@ variables in a session, though, we will need to execute
 # Building an MNIST classifier
 
 Now let's get started building an MNIST image classifier. The MNIST is a common
-data set of 28x28 pixel images of handwritten digits. They were scrapped from
+data set of 28x28 pixel images of handwritten digits. They were scraped from
 tax forms, then centered on the image.
 
 <img src="{{site.url}}/images/tf/mnist.png" style="display:block;margin:0 auto;width:40%;">
