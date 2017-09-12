@@ -1,0 +1,16 @@
+# List of and information about my presentations
+
+- title: "Building and Breaking Adversarial Networks with TensorFlow"
+  authors: Brandon L. Morris
+  description: "Learn the basics of TensorFlow, how to build an MNIST
+    classifier, and then fool that classifier with adversarial examples."
+  url: https://goo.gl/khDdWs
+  year: 2017
+  venue: Auburn ACM Tech Talks
+- title: "vim and tmux: Edit at the Speed of Thought"
+  authors: Brandon L. Morris
+  url: https://goo.gl/m6SwUD
+  description: "Rule the command line with this introduction to editing with
+    vim and manipulating terminal sessions with tmux."
+  year: 2015
+  venue: Auburn ACM Tech Talks

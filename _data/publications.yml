@@ -1,13 +1,13 @@
 # List of and information about my publications
 
-- title: "MPIgnite: An MPI-like Language and Protytpe for Apache Spark"
-  authors: Brandon L. Morris, Anthony Skjellum
-  description:
-  url: https://arxiv.org/abs/1707.04788
-  year: 2017
-  venue: EuroMPI/USA
 - title: Attack and Defence Methods in Machine Learning
   authors: Brandon L. Morris, Anh Nguyen
   description:
   year: 2017
   venue: Manuscript in progress
+- title: "MPIgnite: An MPI-like Language and Protytpe for Apache Spark"
+  authors: Brandon L. Morris, Anthony Skjellum
+  description:
+  url: https://arxiv.org/abs/1707.04788
+  year: 2017
+  venue: EuroMPI/USA Poster

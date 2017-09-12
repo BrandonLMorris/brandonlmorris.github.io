@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>My presentations</h1>
+
+  {{ content }}
+
+  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
+
+  <ul class="presentations">
+    {% for pres in site.data.presentations %}
+      {% capture post_lang %}{{ pres.lang | default: site_lang }}{% endcapture %}
+      {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
+
+      <li style="margin-bottom:7%">
+        <h2>
+          <a class="post-link" {% if pres.url != empty %}href="{{ pres.url  }}"{% endif %}{% if lang != empty %} lang="{{ lang }}"{% endif %}>{{ pres.title | escape }}{% if post.external-url %} &rarr;{% endif %}</a>
+        </h2>
+        <span class="post-meta">{{ pres.authors }}</span>
+        <span class="post-meta">{{ pres.year }}, {{ pres.venue }}</span>
+        <br>
+        {{ pres.description }}
+
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
