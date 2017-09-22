@@ -1,5 +1,14 @@
 # List of and information about my presentations
 
+- title: "Differentiable Neural Computers"
+  authors: Brandon L. Morris
+  url: https://goo.gl/twjKVi
+  year: 2017
+  venue: Dr. Anh Nguyen Lab Meeting
+  description: "Created in 2016 as an extension of the Neural Turing Machine by
+  Alex Graves and Greg Wayne (and others), Differentiable Neural Computers a
+  type of memory-augmented deep neural networks that can be trained by gradient
+  descent."
 - title: "Building and Breaking Adversarial Networks with TensorFlow"
   authors: Brandon L. Morris
   description: "Learn the basics of TensorFlow, how to build an MNIST
