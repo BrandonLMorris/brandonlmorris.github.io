@@ -1,6 +1,6 @@
 ---
-layout: publications
-title: "Publications"
-permalink: /publications/
+layout: papers
+title: "papers"
+permalink: /papers/
 ---
 
