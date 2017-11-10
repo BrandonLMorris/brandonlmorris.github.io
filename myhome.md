@@ -19,8 +19,8 @@ engineering, and I expect to graduate in May of 2018.
 I'm fascinated by deep learning, and hope to pursue a Ph.D. in artificial
 intelligence after graduation. My particular interests lie in **deep neural
 network architectures** and **novel training procedures**. Practically, I study
-these in the application of computer vision, and strive to improve how current
-deep learning models understand the physical world we live in.
+these in the application of __computer vision__, and strive to improve how
+current deep learning models understand the physical world we live in.
 
 [ae]: https://blog.openai.com/adversarial-example-research/
 [nguyen]: http://anhnguyen.me/
