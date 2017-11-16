@@ -3,6 +3,7 @@ layout: post
 title: 'What is deep learning?'
 categories:
  - ai
+crosspost_to_medium: true
 ---
 
 Deep learning is a subfield of machine learning that has had remarkable research
