@@ -1,5 +1,17 @@
 # List of and information about my presentations
 
+
+- title: "Dynamic Routing Between Capsules"
+  authors: Brandon L. Morris
+  url: https://goo.gl/h93MN3
+  year: 2017
+  venue: Dr. Anh Nguyen Lab Meeting
+  description: "Paper presentation of 'Dynamic Routing Between Capsules'.
+  Capsules are groups of neurons that contain extra information about an
+  entity's size, pose, location, etc. than typically capable in a deep convnet.
+  This paper demonstrates how a shallow capsule network can be used in
+  conjuction with 'routing by agreement' to acheive near-state of the art in
+  image classification tasks."
 - title: "Differentiable Neural Computers"
   authors: Brandon L. Morris
   url: https://goo.gl/twjKVi
