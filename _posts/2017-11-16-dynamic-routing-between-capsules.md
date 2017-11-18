@@ -104,12 +104,12 @@ transformation.
 Rather than invariance that's built into traditional convnets by design in
 pooling layers, what we should really strive for is __equivariance__: the model
 will still produce a similar classification, but the internal activations
-transform along with the image transformations. Rather than ignoring
+transform along with the image transformations. Instead of ignoring
 transformations, we should adjust alongside them.
 
 ### A note on sub-sampling
 
-Before we proceed, I feel it necessary to point out that Hinton points out these
+Before we proceed, I feel it necessary to point out that Hinton identifies these
 problems with sub-sampling in convnets, __not the convolution operation
 itself__. The sub-sampling in typical convnets (usually max-pooling) is largely
 to blame for these deficiencies in convnets. The convolution operation itself is
