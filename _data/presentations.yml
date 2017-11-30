@@ -21,7 +21,7 @@
   Alex Graves and Greg Wayne (and others), Differentiable Neural Computers a
   type of memory-augmented deep neural networks that can be trained by gradient
   descent."
-- title: "Building and Breaking Adversarial Networks with TensorFlow"
+- title: "Building and Breaking Deep Neural Networks with TensorFlow"
   authors: Brandon L. Morris
   description: "Learn the basics of TensorFlow, how to build an MNIST
     classifier, and then fool that classifier with adversarial examples."
