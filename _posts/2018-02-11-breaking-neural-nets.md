@@ -125,7 +125,7 @@ the target model.</figcaption>
 The FGSM attack can be characterized by the following equation:
 
 $$
-x_{adversary} = x + \epsilon sign(\nabla_x J(x, y; \theta))
+x_{adversary} = x + \epsilon \cdot \text{sign}(\nabla_x J(x, y; \theta))
 $$
 
 where $$\epsilon$$ is the attack strength and $$J$$ is our cost function for
