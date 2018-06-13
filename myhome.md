@@ -25,6 +25,15 @@ This includes working on problems like [adversarial examples][ae] and expanding
 new architectures like [capsule networks][capsules]. Ultimately, I want to make
 deep learning more robust, more practical, and more useful within our society.
 
+---
+
+{% for post in site.posts limit:1 %}
+<h1>
+  <a style="color:black; text-decoration:none" href="{{post.url}}">Latest Post: {{post.title}}</a>
+</h1>
+{{ post.content }}
+{% endfor %}
+
 [ae]: https://blog.openai.com/adversarial-example-research/
 [nguyen]: http://anhnguyen.me/
 [marcus]: https://arxiv.org/abs/1801.00631
