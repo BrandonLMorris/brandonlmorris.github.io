@@ -1,5 +1,12 @@
 # List of and information about my publications
 
+- title: "VectorDefense: Vectorization as a Defense to Adversarial Examples"
+  authors: Vishaal Munusamy Kabilan, Brandon L. Morris, Anh Nguyen
+  description:
+  url: https://arxiv.org/abs/1804.08529
+  arxiv: https://arxiv.org/abs/1804.08529
+  year: 2018
+  venue: IJCAI-ECAI 2018, IReDLiA Workshop
 - title: Survey on the Robustness of Neural Networks to Adversarial Examples
   authors: Brandon L. Morris, Anh Nguyen
   description:
