@@ -6,7 +6,8 @@
   url: https://arxiv.org/abs/1804.08529
   arxiv: https://arxiv.org/abs/1804.08529
   year: 2018
-  venue: IJCAI-ECAI 2018, IReDLiA Workshop
+  venue: FICC 2019
+    # IJCAI-ECAI 2018, IReDLiA Workshop
 - title: Survey on the Robustness of Neural Networks to Adversarial Examples
   authors: Brandon L. Morris, Anh Nguyen
   description:
