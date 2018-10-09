@@ -44,7 +44,7 @@ rotated through teams working in quality assurance, [internal IaaS testing
 infrastructure], and [cloud networking cluster management technology][firefly].
 
 More recently, I interned at Sandia National Labs where I engineered a machine
-learning model to predict hard drive failure from raw S.M.A.R.T. disc attributes
+learning model to predict hard drive failure from raw S.M.A.R.T. disk attributes
 (to be open-sourced soon). My full resume can be found [here][resume].
 
 
