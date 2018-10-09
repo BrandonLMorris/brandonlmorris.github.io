@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "My home"
+title: "Brandon L. Morris"
 permalink: /
 ---
 
