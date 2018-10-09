@@ -6,8 +6,8 @@ permalink: /
 
 # Welcome
 
-<figure class="image" style="float:right; width:30%;border-radius:20%; margin-left:10pt">
-<img src="/images/avatar.jpeg">
+<figure class="image" style="float:right; width:30%; margin-left:10pt">
+<img style="border-radius:20%;" src="/images/avatar.jpeg">
 <figcaption style="text-align:center;"><a href="mailto:mail@brandonlmorris.com" style="color:black;">mail [AT] brandonlmorris.com</a></figcaption>
 </figure>
 
