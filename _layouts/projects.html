@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="home">
+  {{ content }}
+  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
+
+  <h1>My Projects</h1>
+  {% for category in site.data.projects %}
+  <h2>{{ category.category }}</h2>
+
+  <ul>
+    {% for project in category.data %}
+      {% capture post_lang %}{{ project.lang | default: site_lang }}{% endcapture %}
+      {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
+
+      <li style="margin-top:2%;">
+        <h3>
+          {% if project.url %}
+            <a class="post-link"
+              href="{{ project.url  }}"
+            {% if lang != empty %}
+              lang="{{ lang }}"
+            {% endif %}>
+          {% endif %}
+          {{ project.title | escape }}{% if post.external-url %} &rarr;{% endif %}{% if project.url %}</a>{% endif %}
+        </h3>
+      </li>
+
+      <span class="post-meta">{{ project.authors }}</span>
+
+      {% if project.year %}
+      <span class="post-meta">{{ project.year }}, {{ project.venue }}</span>
+      {% endif %}
+
+      {% if project.arxiv %}
+        <br>
+        <span class="post-meta"><a class="post-link" href="{{ project.arxiv }}">ArXiv</a></span>
+      {% endif %}
+
+      {% if project.poster %}
+        <br>
+        <span class="post-meta"><a class="post-link" href="{{ project.poster }}">Poster</a></span>
+      {% endif %}
+      <br>
+      {{ project.description }}
+
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+
+</div>

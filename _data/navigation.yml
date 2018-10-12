@@ -5,8 +5,8 @@ main:
     url: /archives/
   - title: "Resume"
     url: https://goo.gl/oiTq72
-  - title: "Papers"
-    url: /papers/
+  - title: "Projects"
+    url: /projects/
   - title: "GitHub"
     url: https://github.com/brandonlmorris
   - title: "Presentations"
