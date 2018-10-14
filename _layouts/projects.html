@@ -6,20 +6,20 @@ layout: default
   {{ content }}
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
 
-  <h1>My Projects</h1>
+  <!--h1>My Projects</h1-->
   {% for category in site.data.projects %}
-  <h2>{{ category.category }}</h2>
+  <h1>{{ category.category }}</h1>
 
   <ul>
     {% for project in category.data %}
       {% capture post_lang %}{{ project.lang | default: site_lang }}{% endcapture %}
       {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
 
-      <li style="margin-top:2%;">
-        <h3>
+      <li>
+        <h3 style="margin-bottom:5px; margin-top:10px">
           {% if project.url %}
             <a class="post-link"
-              href="{{ project.url  }}"
+              href="{{ project.url }}"
             {% if lang != empty %}
               lang="{{ lang }}"
             {% endif %}>
@@ -28,23 +28,52 @@ layout: default
         </h3>
       </li>
 
-      <span class="post-meta">{{ project.authors }}</span>
-
-      {% if project.year %}
-      <span class="post-meta">{{ project.year }}, {{ project.venue }}</span>
+      {% if project.authors %}
+        <span class="post-meta">{{ project.authors }}</span>
       {% endif %}
 
-      {% if project.arxiv %}
+      {% if project.year %}
+        <span class="post-meta">{{ project.year }} {{ project.venue }}</span>
+      {% endif %}
+      {% if project.company %}
+        <span class="post-meta">{{ project.company }}</span>
+      {% endif %}
+      {% if project.authors or project.year or project.company %}<br>{% endif %}
+
+
+      {% if project.role %}
+        <span><b>Role(s):</b> {{project.role}}</span>
         <br>
-        <span class="post-meta"><a class="post-link" href="{{ project.arxiv }}">ArXiv</a></span>
+      {% endif %}
+
+      {% if project.skills %}
+        <span><b>Skills:</b> {{project.skills}}</span>
+        <br>
+      {% endif %}
+
+      {% if project.description %}
+      <b>Description:</b> {{ project.description }}
+      {% endif %}
+
+      {% if project.paper %}
+        <br>
+        <span class="post-meta"><a class="post-link" href="{{ project.paper }}"><u>Paper</u></a></span>
       {% endif %}
 
       {% if project.poster %}
         <br>
-        <span class="post-meta"><a class="post-link" href="{{ project.poster }}">Poster</a></span>
+        <span class="post-meta"><a class="post-link" href="{{ project.poster }}"><u>Poster</u></a></span>
       {% endif %}
-      <br>
-      {{ project.description }}
+
+      {% if project.source %}
+        <br>
+        <span class="post-meta"><a class="post-link" href="{{ project.source }}"><u>GitHub</u></a></span>
+      {% endif %}
+
+      {% if project.more_info %}
+        <br>
+        <span class="post-meta"><a class="post-link" href="{{ project.more_info }}"><u>More information</u></a></span>
+      {% endif %}
 
     {% endfor %}
   </ul>

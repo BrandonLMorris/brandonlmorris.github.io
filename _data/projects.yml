@@ -2,33 +2,158 @@
 
 - category: "Professional"
   data:
-  - title: "Nothing"
-- category: "School"
-  data:
-  - title: "Nothing"
+  - title: "Hard Disk Failure Predictor"
+    company: "Sandia National Labs"
+    role: "Intern, Lead developer"
+    skills: "Machine learning, scikit-learn, fast.ai, technical writing"
+    year: 2018
+    description: |
+      I leveraged machine learning to create a classifier that inputs raw
+      S.M.A.R.T. attributes and predicts if the disk is likely to soon fail.
+      Using a real-world dataset from Backblaze, we achieved a precision score
+      of 0.97 when trained over 120,000 disks of numerous models and
+      manufacturers.
+  - title: Test Bed as a Service (TBaaS)
+    year: 2016
+    company: ADTRAN
+    role: Intern, developer
+    more_info: https://www.adtran.com/index.php/blog/technology-blog/269-creating-integration-test-environments-at-adtran
+    skills: Docker, Python, Celery, cloud computing
+    description: |
+      For more consistent, reproduceable testing, ADTRAN uses an internal IaaS
+      system that allows for the dynamic creation, utilization, and deletion of
+      testbeds that often involve clusters of virtual machines. Test Bed as a
+      Service (TBaaS) is that system, working as a cloud service running on top
+      of Docker. My involvement included daily maintence of the system,
+      intefacing with internal customers, and developing new features like test
+      bed expiration.
+  - title: Firefly node-admin
+    year: 2016
+    role: Intern, developer
+    company: ADTRAN
+    skills: Python, cloud computing
+    more_info: https://www.adtran.com/index.php/blog/technology-blog/212-dockercon-16
+    description: |
+      ADTRAN's Firefly product is designed from the ground up to be a
+      distributed, cloud-based networking management app. As such, it needs
+      substantial tooling to create and manage the clusters it runs on. The
+      node-admin tool allows for the provisioning and configuration of
+      individual pieces of a Firefly cluster. My involvement included a
+      substantial refactoring of the tool making it much easier to understand
+      and extend the tool's codebase.
+  - title: Firefly Gradle Build Plugin
+    year: 2016
+    company: ADTRAN
+    skills: Gradle, Groovy
+    more_info: https://www.adtran.com/index.php/blog/technology-blog/356-announcing-the-gradle-scala-multiversion-plugin
+    description: |
+      The Firefly product follows a microservice architecture, and individual
+      installs vary vary tremendously. As such, a special Gradle build plugin
+      was developed to facilitate the processes. My involvement included
+      improving the plugin such that the final binaries utilized 50% less disk
+      space than before.
 - category: "Research"
   data:
     - title: "VectorDefense: Vectorization as a Defense to Adversarial Examples"
       authors: Vishaal Munusamy Kabilan, Brandon L. Morris, Anh Nguyen
-      description:
+      skills: TensorFlow, deep learning
+      role: Co-author
+      description: |
+        Deep neural networks are highly susceptible to being fooled by small
+        perturbations in their input, known as adversarial examples. We propose
+        a new defense to adversarial attacks that involves converting the
+        bitmap imapge into a vector graphic using the popular Potrace algorithm
+        before converting back and classifying. This simple preprocessing step
+        has a substantial benefit to preventing the effectiveness of
+        adversaries, as we demonstrate compared to numerous attacks and
+        defenses on the MNIST dataset.
       url: https://arxiv.org/abs/1804.08529
-      arxiv: https://arxiv.org/abs/1804.08529
+      paper: https://arxiv.org/abs/1804.08529
       year: 2018
       venue: # FICC 2019
         # IJCAI-ECAI 2018, IReDLiA Workshop
     - title: "Survey on the Robustness of Neural Networks to Adversarial Examples"
       authors: Brandon L. Morris, Anh Nguyen
-      description:
+      role: Lead author
+      skills: Technical writing
+      description: |
+        Deep neural networks are extremely performant on a wide range of
+        machine learning tasks, but can be easily fooled by small changes to
+        the input. These "adversarial examples" pose a serious threat to deep
+        learning's ability to be fully leveraged in real-world environments. We
+        take a comprehensive look at the state of research into adversarial
+        examples in deep learning, looking at the different attacks, defenses,
+        and theoritical hypotheses.
       year: 2017
-      venue: # Manuscript in progress
     - title: "MPIgnite: An MPI-like Language and Protytpe for Apache Spark"
       authors: Brandon L. Morris, Anthony Skjellum
-      description:
+      role: Lead author
+      skills: Apache Spark, MPI, HPC, cloud computing
+      description: |
+        Task-parallel code common on modern supercomputers relies heavily on
+        the Message Passing Interface, or MPI. However, MPI is very low level,
+        requires intimate domain knowledge, and is difficult to refactor. We
+        take the spirit of MPI and implement a similar API into the Apache
+        Spark data processing engine. Without compromising Spark's strength of
+        data-parallel capabilities, we introduce a flexible system that also
+        allows for MPI-like programming in a popular cloud platform.
       url: https://arxiv.org/abs/1707.04788
-      arxiv: https://arxiv.org/abs/1707.04788
+      paper: https://arxiv.org/abs/1707.04788
       year: 2017
       venue: EuroMPI/USA Poster
       poster: "https://www.mcs.anl.gov/eurompi2017/pics/posters/Brandon-Morris-MPIgnite-Poster.pdf"
+    - title: "MCGPU: Monte Carlo GPU Chemistry Simulator"
+      role: Intern, core developer
+      skills: C++, OpenACC
+      description: |
+        MCGPU leverages GPU programming to accelerate chemistry simulations. In
+        the Monte Carlo simulation, the energies between and within molecules
+        needs to be repeatedly calculated as the dynamics of the system shift.
+        These operations are highly parallelizable, and thus well-suited for
+        the GPU. My contributions to the project involved substantially
+        refactoring the system, making it easier to understand and expand, as
+        well as introducing new intra-molecular energy calculations to the
+        system.
 - category: "Personal"
   data:
-  - title: "Nothing"
+    - title: "AUACM.com"
+      description: |
+        Full stack website for the Auburn University ACM student chapter. Also
+        served as a platform for ICPC competitive programming practice.
+      role: Project lead & core contributor
+      skills: Full-stack development, AngularJS, Flask, MySQL, GitHub
+      source: https://github.com/AuburnACM/auacm
+      url: https://github.com/AuburnACM/auacm
+    - title: "auacm-cli"
+      description: |
+        Command-line interface to the REST API of the auacm.com for competitive
+        programming practice.
+      source: https://github.com/BrandonLMorris/auacm-cli
+      url: https://github.com/BrandonLMorris/auacm-cli
+    - title: "ICPC Competitive Programming"
+      description: |
+        Algorithmic challenges to be completed in a timed, team-based
+        environment. Repository of solutions to problems from various sources
+        (HackerRank, Kattis, etc.)
+      source: https://github.com/BrandonLMorris/Competitive-Programming
+      url: https://github.com/BrandonLMorris/Competitive-Programming
+      skills: Java, Python, C++, team collaboration
+- category: "School"
+  data:
+    - title: "Senior Design: Auburn Facilities Management Web App"
+      skills: Full-stack development, jQuery, Flask, REST API, GitHub, technical communication
+      role: Backend lead, frontend contributor
+      year: 2018
+      description: |
+        For our senior design project, we were tasked with meeting with a
+        professor from Building Science to design a technical solution for his
+        research project. Building designers utilize Navisworks 3D design
+        software, and builders and maintainers document parts and
+        specifications elsewhere. We sought to integrate the underutilized
+        digital design documents with the day-to-day information necessary to
+        keep university buildings running. We designed and implemented a
+        client-server application with a web app for easy modification of
+        information that leveraged a REST API that could easily be consumed by
+        the Navisworks applicaton.
+      source: https://github.com/BrandonLMorris/aufm-webapp
+      url: https://github.com/BrandonLMorris/aufm-webapp
