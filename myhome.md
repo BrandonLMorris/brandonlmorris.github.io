@@ -17,10 +17,10 @@ with a particular focus on multimodal models combining computer vision and
 natural language processing. I currently study under [Dr. Yezhou Yang][yang] in
 the [Active Perception Group][apg].
 
-__I'm available for hire!__ I'm currently looking for full-time positions in
+<!--__I'm available for hire!__ I'm currently looking for full-time positions in
 software engineering, data science, or related fields. I have professional
 experience with full-stack development, machine learning applications, and
-cutting-edge research. You can see my full [resume][resume], or my list of [projects][projects].
+cutting-edge research. You can see my full [resume][resume], or my list of [projects][projects].-->
 
 ## Research Interests
 
