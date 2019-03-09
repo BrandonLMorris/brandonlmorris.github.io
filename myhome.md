@@ -8,19 +8,12 @@ permalink: /
 
 <figure class="image" style="float:right; width:30%; margin-left:10pt">
 <img style="border-radius:20%;" src="/images/avatar.jpeg">
-<figcaption style="text-align:center;"><a href="mailto:mail@brandonlmorris.com" style="color:black;">mail [AT] brandonlmorris.com</a></figcaption>
+<figcaption style="text-align:center;"><a href="mailto:mail@brandonmorris.dev" style="color:black;">mail [AT] brandonmorris.dev</a></figcaption>
 </figure>
 
-I am an Ph.D. student of Computer Science with a focus on Artificial
-Intelligence at Arizona State University. I currently study deep learning and
-with a particular focus on multimodal models combining computer vision and
-natural language processing. I currently study under [Dr. Yezhou Yang][yang] in
-the [Active Perception Group][apg].
-
-<!--__I'm available for hire!__ I'm currently looking for full-time positions in
-software engineering, data science, or related fields. I have professional
-experience with full-stack development, machine learning applications, and
-cutting-edge research. You can see my full [resume][resume], or my list of [projects][projects].-->
+I am a software engineer currently located in the Phoenix. My areas of
+experience and interest lie in machine learning, data pipelines, and distributed
+systems.
 
 ## Research Interests
 
@@ -30,7 +23,7 @@ understanding these shortcomings and devising novel approaches to overcome them.
 This includes working on problems like [adversarial examples][ae] and expanding
 new architectures like [capsule networks][capsules]. Ultimately, I want to make
 deep learning more robust, more practical, and more useful within our society.
-Feel free to [email](mailto:mail@brandonlmorris.com) me if you'd like to
+Feel free to [email](mailto:mail@brandonmorris.dev) me if you'd like to
 discuss!
 
 ## Previous Activity
@@ -40,13 +33,13 @@ Mathematics from Auburn University, where I also conducted research under [Dr.
 Anh Nguyen][nguyen] studying deep learning robustness against [adversarial
 attacks][vectordefense]. Before that, I researched [High Performance Computing
 methods][mpignite] under Dr. Anthony Skjellum and [GPU-accelerated chemistry
-simulations][mcgpu]
-under Dr. Jeffrey Overbey and Dr. Orlando Acevedo.
+simulations][mcgpu] under Dr. Jeffrey Overbey and Dr. Orlando Acevedo.
 
 Outside of class, I've had a number of professional experiences. For a full year
 I worked as a software engineering co-op at ADTRAN, Inc. During my time, I
 rotated through teams working in quality assurance, [internal IaaS testing
-infrastructure], and [cloud networking cluster management technology][firefly].
+infrastructure][tbaas], and [cloud networking cluster management
+technology][firefly].
 
 More recently, I interned at Sandia National Labs where I engineered a machine
 learning model to predict hard drive failure from raw S.M.A.R.T. disk attributes
