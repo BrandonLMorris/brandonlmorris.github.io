@@ -38,7 +38,7 @@ Outline:
 [warm-restart]: http://arxiv.org/abs/1608.03983
 [super-convergence]: http://arxiv.org/abs/1708.07120
 [dawn]: https://dawn.cs.stanford.edu/benchmark/
-[fastai]: https://course.fasta.ai
+[fastai]: https://course.fast.ai
 
 Efficiently training deep neural networks can often be an art as much as a
 science. Industry-grade libraries like [PyTorch][pytorch] and
