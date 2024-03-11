@@ -23,6 +23,8 @@ twitter_username: blancemorris
 github_username:  brandonlmorris
 author: Brandon L. Morris
 
+google_analytics: G-C1WLP6S74E
+
 # Build settings
 markdown: kramdown
 # theme: minima
