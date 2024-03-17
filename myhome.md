@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Brandon L. Morris"
+title: "Brandon Morris"
 permalink: /
 ---
 
@@ -11,20 +11,9 @@ permalink: /
 <figcaption style="text-align:center;"><a href="mailto:mail@brandonmorris.dev" style="color:black;">mail [AT] brandonmorris.dev</a></figcaption>
 </figure>
 
-I am a software engineer currently located in the Phoenix. My areas of
-experience and interest lie in machine learning, data pipelines, and distributed
-systems.
-
-## Research Interests
-
-Deep learning is an incredibly powerful and popular machine learning technique,
-but it is not without its own set of [limitations][marcus]. I'm interested in
-understanding these shortcomings and devising novel approaches to overcome them.
-This includes working on problems like [adversarial examples][ae] and expanding
-new architectures like [capsule networks][capsules]. Ultimately, I want to make
-deep learning more robust, more practical, and more useful within our society.
-Feel free to [email](mailto:mail@brandonmorris.dev) me if you'd like to
-discuss!
+I am a software engineer currently located in the Silicon Valley. My areas of
+experience and interest lie in machine learning, testing intrastructure, and
+mobile testing tools.
 
 ## Previous Activity
 
@@ -41,10 +30,8 @@ rotated through teams working in quality assurance, [internal IaaS testing
 infrastructure][tbaas], and [cloud networking cluster management
 technology][firefly].
 
-More recently, I interned at Sandia National Labs where I engineered a machine
-learning model to predict hard drive failure from raw S.M.A.R.T. disk attributes
-(to be open-sourced soon). My full resume can be found [here][resume].
-
+After graduation, I interned at Sandia National Labs where I engineered a machine
+learning model to predict hard drive failure from raw S.M.A.R.T. disk attributes.
 
 ---
 
@@ -57,8 +44,6 @@ learning model to predict hard drive failure from raw S.M.A.R.T. disk attributes
 
 [ae]: https://blog.openai.com/adversarial-example-research/
 [nguyen]: http://anhnguyen.me/
-[marcus]: https://arxiv.org/abs/1801.00631
-[capsules]: {{site.url}}/2017/11/16/dynamic-routing-between-capsules/
 [yang]: https://yezhouyang.engineering.asu.edu/
 [apg]: https://yezhouyang.engineering.asu.edu/research-group/
 [vectordefense]: https://arxiv.org/abs/1804.08529
@@ -66,6 +51,5 @@ learning model to predict hard drive failure from raw S.M.A.R.T. disk attributes
 [mpignite]: https://arxiv.org/abs/1707.04788
 [tbaas]: https://www.adtran.com/index.php/blog/technology-blog/269-creating-integration-test-environments-at-adtran
 [firefly]: https://www.adtran.com/index.php/blog/technology-blog/269-creating-integration-test-environments-at-adtran
-[resume]: https://goo.gl/oiTq72
 [projects]: {{site.url}}/projects
 
