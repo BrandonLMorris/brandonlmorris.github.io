@@ -12,8 +12,8 @@ permalink: /
 </figure>
 
 I am a software engineer currently located in the Silicon Valley. My areas of
-experience and interest lie in machine learning, testing intrastructure, and
-mobile testing tools.
+experience and interest lie in **automated mobile testing** (iOS and Android),
+**machine learning**, and **software infrastructure**.
 
 ## Previous Activity
 
@@ -36,20 +36,15 @@ learning model to predict hard drive failure from raw S.M.A.R.T. disk attributes
 ---
 
 {% for post in site.posts limit:1 %}
-<h1>
+<h2>
   <a style="color:black; text-decoration:none" href="{{post.url}}">Latest Post: {{post.title}}</a>
-</h1>
+</h2>
 {{ post.content }}
 {% endfor %}
 
-[ae]: https://blog.openai.com/adversarial-example-research/
 [nguyen]: http://anhnguyen.me/
-[yang]: https://yezhouyang.engineering.asu.edu/
-[apg]: https://yezhouyang.engineering.asu.edu/research-group/
 [vectordefense]: https://arxiv.org/abs/1804.08529
 [mcgpu]: https://github.com/orlandoacevedo/MCGPU
 [mpignite]: https://arxiv.org/abs/1707.04788
 [tbaas]: https://www.adtran.com/index.php/blog/technology-blog/269-creating-integration-test-environments-at-adtran
 [firefly]: https://www.adtran.com/index.php/blog/technology-blog/269-creating-integration-test-environments-at-adtran
-[projects]: {{site.url}}/projects
-
