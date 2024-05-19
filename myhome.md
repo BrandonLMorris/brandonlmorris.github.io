@@ -11,7 +11,7 @@ permalink: /
 <figcaption style="text-align:center;"><a href="mailto:mail@brandonmorris.dev" style="color:black;">mail [AT] brandonmorris.dev</a></figcaption>
 </figure>
 
-I am a software engineer currently located in the Silicon Valley. My areas of
+I am a senior software engineer currently located in the Silicon Valley. My areas of
 experience and interest lie in **automated mobile testing** (iOS and Android),
 **machine learning**, and **software infrastructure**.
 
