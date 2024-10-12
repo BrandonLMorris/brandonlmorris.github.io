@@ -14,12 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Brandon Morris
-email: mail at brandonlmorris dot dev
+email: mail at brandonmorris dot dev
 description: > # this means to ignore newlines until "baseurl:"
   The personal and research blog of Brandon L. Morris
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://brandonlmorris.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: blancemorris
 github_username:  brandonlmorris
 author: Brandon L. Morris
 
@@ -30,7 +29,6 @@ markdown: kramdown
 # theme: minima
 gems:
   - jekyll-feed
-  - jekyll-crosspost-to-medium
 exclude:
   - Gemfile
 
