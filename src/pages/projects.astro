@@ -1,0 +1,96 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Main from "@/components/Main.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import projectsData from "@/data/projects.yaml";
+
+type Project = {
+  title: string;
+  company?: string;
+  role?: string;
+  skills?: string;
+  year?: number;
+  description?: string;
+  url?: string;
+  paper?: string;
+  poster?: string;
+  source?: string;
+  more_info?: string;
+  authors?: string;
+  venue?: string;
+};
+
+type Category = {
+  category: string;
+  data: Project[];
+};
+
+const categories = projectsData as Category[];
+---
+
+<Layout title="Projects" description="Projects and work by Brandon L. Morris">
+  <Main pageTitle="Projects" pageDesc="A selection of professional, research, and personal projects.">
+    {
+      categories.map(({ category, data }) => (
+        <section class="mb-10">
+          <h2 class="text-xl font-semibold mb-4 text-accent">{category}</h2>
+          <div class="space-y-6">
+            {data.map((project) => (
+              <div class="border-border border-b pb-6 last:border-0">
+                <div class="flex flex-wrap items-baseline gap-x-2 mb-1">
+                  <h3 class="text-lg font-medium">{project.title}</h3>
+                  {project.year && (
+                    <span class="text-sm text-foreground/60">{project.year}</span>
+                  )}
+                </div>
+                {(project.company || project.role) && (
+                  <p class="text-sm text-foreground/70 mb-2">
+                    {[project.role, project.company].filter(Boolean).join(" · ")}
+                  </p>
+                )}
+                {project.authors && (
+                  <p class="text-sm text-foreground/70 mb-2 italic">{project.authors}</p>
+                )}
+                {project.description && (
+                  <p class="text-sm leading-relaxed mb-2">{project.description.trim()}</p>
+                )}
+                {project.skills && (
+                  <p class="text-xs text-foreground/60 mb-2">
+                    <span class="font-medium">Skills: </span>{project.skills}
+                  </p>
+                )}
+                <div class="flex flex-wrap gap-3 mt-2">
+                  {project.url && (
+                    <LinkButton href={project.url} class="text-sm decoration-dashed">
+                      Visit
+                    </LinkButton>
+                  )}
+                  {project.source && project.source !== project.url && (
+                    <LinkButton href={project.source} class="text-sm decoration-dashed">
+                      Source
+                    </LinkButton>
+                  )}
+                  {project.paper && (
+                    <LinkButton href={project.paper} class="text-sm decoration-dashed">
+                      Paper
+                    </LinkButton>
+                  )}
+                  {project.poster && (
+                    <LinkButton href={project.poster} class="text-sm decoration-dashed">
+                      Poster
+                    </LinkButton>
+                  )}
+                  {project.more_info && (
+                    <LinkButton href={project.more_info} class="text-sm decoration-dashed">
+                      More info
+                    </LinkButton>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </Main>
+</Layout>

@@ -1,0 +1,46 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Main from "@/components/Main.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import presentationsData from "@/data/presentations.yaml";
+
+type Presentation = {
+  title: string;
+  authors: string;
+  url?: string;
+  year: number;
+  venue?: string;
+  description?: string;
+};
+
+const presentations = presentationsData as Presentation[];
+const sorted = [...presentations].sort((a, b) => b.year - a.year);
+---
+
+<Layout title="Presentations" description="Talks and presentations by Brandon L. Morris">
+  <Main pageTitle="Presentations" pageDesc="Talks and presentations from conferences, workshops, and meetups.">
+    <div class="space-y-8">
+      {
+        sorted.map((p) => (
+          <div class="border-border border-b pb-6 last:border-0">
+            <div class="flex flex-wrap items-baseline gap-x-2 mb-1">
+              <h2 class="text-lg font-medium">{p.title}</h2>
+              <span class="text-sm text-foreground/60">{p.year}</span>
+            </div>
+            {p.venue && (
+              <p class="text-sm text-foreground/70 mb-2 italic">{p.venue}</p>
+            )}
+            {p.description && (
+              <p class="text-sm leading-relaxed mb-3">{p.description.trim()}</p>
+            )}
+            {p.url && (
+              <LinkButton href={p.url} class="text-sm decoration-dashed">
+                View slides
+              </LinkButton>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </Main>
+</Layout>
